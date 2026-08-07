@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robotics Camp Portal</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --primary-dark: #1d4ed8;
+            --bg: #f8fafc;
+            --card-bg: #ffffff;
+            --text: #0f172a;
+            --text-muted: #475569;
+            --accent: #f59e0b;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            padding: 20px;
+            line-height: 1.5;
+        }
+
+        header {
+            text-align: center;
+            padding: 30px 20px;
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: white;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0 0 10px 0;
+            font-size: 2.2rem;
+        }
+
+        header p {
+            margin: 0;
+            opacity: 0.9;
+            font-size: 1.1rem;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        /* Collapsible Card Styling */
+        details.day-card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            margin-bottom: 24px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            border-left: 6px solid var(--primary);
+            overflow: hidden;
+        }
+
+        details.day-card.day-5 {
+            border-left-color: var(--accent);
+        }
+
+        summary {
+            padding: 24px;
+            cursor: pointer;
+            list-style: none; /* Removes default arrow */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background-color 0.2s ease;
+        }
+
+        /* Webkit specific removal of default arrow */
+        summary::-webkit-details-marker {
+            display: none;
+        }
+
+        summary:hover {
+            background-color: #f1f5f9;
+        }
+
+        .day-title {
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin: 0;
+            color: var(--text);
+        }
+
+        /* Custom Dropdown Arrow */
+        .chevron {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            transition: transform 0.3s ease;
+        }
+
+        /* Rotate arrow when open */
+        details[open] summary .chevron {
+            transform: rotate(180deg);
+        }
+
+        .day-content {
+            padding: 0 24px 24px 24px;
+        }
+
+        .day-subtitle {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-bottom: 16px;
+            padding-top: 8px;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        /* Vertical Link List */
+        .link-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .link-btn {
+            display: block;
+            padding: 14px 16px;
+            background-color: #f8fafc;
+            color: var(--primary-dark);
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: all 0.2s ease;
+            border: 1px solid #e2e8f0;
+        }
+
+        .link-btn:hover {
+            background-color: var(--primary);
+            color: white;
+            border-color: var(--primary);
+            transform: translateX(4px); /* Slides right slightly instead of up */
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>🤖 QYU Robotics Camp</h1>
+            <p>Daily Tutorials, Code Blocks, and Challenge Resources</p>
+        </header>
+
+        <!-- DAY 1 -->
+        <details class="day-card">
+            <summary>
+                <h2 class="day-title">Monday: Intro to Micro:bit</h2>
+                <span class="chevron">▼</span>
+            </summary>
+            <div class="day-content">
+                <div class="day-subtitle">Getting started with MakeCode, displays, buttons, and basic loops.</div>
+                <div class="link-list">
+                    <a href="https://makecode.microbit.org/" target="_blank" class="link-btn">1. 🚀 Open MakeCode Editor</a>
+                    <a href="https://microbit.org/projects/make-it-code-it/name-badge/" target="_blank" class="link-btn">2. 📄 Tutorial: Name Badge</a>
+                    <a href="https://microbit.org/projects/make-it-code-it/flashing-heart/" target="_blank" class="link-btn">3. 📄 Tutorial: Flashing Heart</a>
+                    <a href="https://microbit.org/projects/make-it-code-it/rock-paper-scissors/" target="_blank" class="link-btn">4. 📄 Tutorial: Rock Paper Scissors</a>
+                </div>
+            </div>
+        </details>
+
+        <!-- DAY 2 -->
+        <details class="day-card">
+            <summary>
+                <h2 class="day-title">Tuesday: More Sensors & Logic</h2>
+                <span class="chevron">▼</span>
+            </summary>
+            <div class="day-content">
+                <div class="day-subtitle">Using light, sound, and temperature inputs with IF/THEN statements.</div>
+                <div class="link-list">
+                    <a href="https://microbit.org/projects/make-it-code-it/night-light/" target="_blank" class="link-btn">1. 📄 Tutorial: Sunlight / Night Light</a>
+                    <a href="https://microbit.org/projects/make-it-code-it/max-min-thermometer/" target="_blank" class="link-btn">2. 📄 Tutorial: Temperature Sensor</a>
+                    <a href="https://microbit.org/projects/make-it-code-it/microbit-alarm/" target="_blank" class="link-btn">3. 📄 Tutorial: Intruder Motion Alarm</a>
+                </div>
+            </div>
+        </details>
+
+        <!-- DAY 3 -->
+        <details class="day-card">
+            <summary>
+                <h2 class="day-title">Wednesday: Maqueen Bot & Motor Control</h2>
+                <span class="chevron">▼</span>
+            </summary>
+            <div class="day-content">
+                <div class="day-subtitle">Adding the Maqueen extension, controlling motors, headlights, and RGB lights.</div>
+                <div class="link-list">
+                    <a href="https://wiki.dfrobot.com/micro_Maqueen_for_micro_bit_SKU_ROB0148-EN" target="_blank" class="link-btn">1. 📖 DFRobot Maqueen Wiki Guide</a>
+                    <a href="#" class="link-btn">2. 📦 Extension URL: Search "maqueen"</a>
+                    <a href="#" class="link-btn">3. 📄 Project: Driving in a Square</a>
+                    <a href="#" class="link-btn">4. 📄 Project: Parallel Parking Challenge</a>
+                </div>
+            </div>
+        </details>
+
+        <!-- DAY 4 -->
+        <details class="day-card">
+            <summary>
+                <h2 class="day-title">Thursday: Autonomous Navigation</h2>
+                <span class="chevron">▼</span>
+            </summary>
+            <div class="day-content">
+                <div class="day-subtitle">Sonar distance sensing (Ultrasonic) and line-tracking IR sensors.</div>
+                <div class="link-list">
+                    <a href="#" class="link-btn">1. 📄 Project: Read Sonar Distance (cm)</a>
+                    <a href="#" class="link-btn">2. 📄 Project: Wall Avoidance Routine</a>
+                    <a href="#" class="link-btn">3. 📄 Project: Line Sensor Testing</a>
+                </div>
+            </div>
+        </details>
+
+        <!-- DAY 5 -->
+        <details class="day-card day-5">
+            <summary>
+                <h2 class="day-title">Friday: The Final Challenge 🏆</h2>
+                <span class="chevron">▼</span>
+            </summary>
+            <div class="day-content">
+                <div class="day-subtitle">Mars Rover Autonomous Challenge.</div>
+                <div class="link-list">
+                    <a href="#" class="link-btn">1. 📜 Challenge Rules & Map Layout</a>
+                    <a href="#" class="link-btn">2. 📋 Official Run Scorecard</a>
+                </div>
+            </div>
+        </details>
+
+        <footer>
+            <p>QYU Robotics Camp • Built for Micro:bit V2 & DFRobot Maqueen Lite</p>
+        </footer>
+    </div>
+
+</body>
+</html>
