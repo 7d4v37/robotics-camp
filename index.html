@@ -114,6 +114,23 @@
             border-top: 1px solid #e2e8f0;
         }
 
+        .day-challenge {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-bottom: 6px;
+            padding-top: 0px;
+            padding-bottom: 4px;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .day-challenge-descr {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-bottom: 6px;
+            padding-top: 0px;
+            padding-bottom: 4px;
+        }
+
         /* Vertical Link List */
         .link-list {
             display: flex;
@@ -154,7 +171,7 @@
     <div class="container">
         <header>
             <h1>🤖 QYU Robotics Camp</h1>
-            <p>Daily Tutorials, Code Blocks, and Challenge Resources</p>
+            <p>Daily Tutorials and Challenges</p>
         </header>
 
         <!-- DAY 1 -->
@@ -164,12 +181,20 @@
                 <span class="chevron">▼</span>
             </summary>
             <div class="day-content">
-                <div class="day-subtitle">Getting started with MakeCode, displays, buttons, and basic loops.</div>
                 <div class="link-list">
-                    <a href="https://makecode.microbit.org/" target="_blank" class="link-btn">1. 🚀 Open MakeCode Editor</a>
-                    <a href="https://microbit.org/projects/make-it-code-it/name-badge/" target="_blank" class="link-btn">2. 📄 Tutorial: Name Badge</a>
-                    <a href="https://microbit.org/projects/make-it-code-it/flashing-heart/" target="_blank" class="link-btn">3. 📄 Tutorial: Flashing Heart</a>
-                    <a href="https://microbit.org/projects/make-it-code-it/rock-paper-scissors/" target="_blank" class="link-btn">4. 📄 Tutorial: Rock Paper Scissors</a>
+                    <a href="https://makecode.microbit.org/" target="_blank" class="link-btn">🛠️ Open MakeCode Editor</a>
+                    <b>Tutorials</b>
+                    <a href="https://microbit.org/projects/make-it-code-it/name-badge/" target="_blank" class="link-btn">📄 Tutorial: Name Badge</a>
+                    <a href="https://microbit.org/projects/make-it-code-it/beating-heart/" target="_blank" class="link-btn">📄 Tutorial: Beating Heart</a>
+                    <a href="https://microbit.org/projects/make-it-code-it/shining-sunbeams/" target="_blank" class="link-btn">📄 Tutorial: Shining Sun</a>
+                    <a href="https://microbit.org/projects/make-it-code-it/audible-emotion-badge/" target="_blank" class="link-btn">📄 Tutorial: Emotion Badge with Sound</a>
+                    <a href="https://microbit.org/projects/make-it-code-it/dice/" target="_blank" class="link-btn">📄 Tutorial: Dice (numbers)</a>
+                    <a href="https://microbit.org/projects/make-it-code-it/graphical-dice/" target="_blank" class="link-btn">📄 Tutorial: Dice (pips)</a>
+                    <b>Competition: Step (Shake) Counter</b>
+                    <a href="https://microbit.org/projects/make-it-code-it/step-counter/" target="_blank" class="link-btn">⭐ Step (Shake) Counter - Standard</a>
+                    <a href="https://microbit.org/projects/make-it-code-it/low-energy-step-counter/" target="_blank" class="link-btn">⭐ Step (Shake) Counter - Low Energy</a>
+                    <b>Competition: Rock, Paper, Scissors</b>
+                    <a href="https://microbit.org/projects/make-it-code-it/rock-paper-scissors/ " target="_blank" class="link-btn">⭐ Rock, Paper, Scissors</a>
                 </div>
             </div>
         </details>
@@ -181,11 +206,27 @@
                 <span class="chevron">▼</span>
             </summary>
             <div class="day-content">
-                <div class="day-subtitle">Using light, sound, and temperature inputs with IF/THEN statements.</div>
                 <div class="link-list">
-                    <a href="https://microbit.org/projects/make-it-code-it/night-light/" target="_blank" class="link-btn">1. 📄 Tutorial: Sunlight / Night Light</a>
-                    <a href="https://microbit.org/projects/make-it-code-it/max-min-thermometer/" target="_blank" class="link-btn">2. 📄 Tutorial: Temperature Sensor</a>
-                    <a href="https://microbit.org/projects/make-it-code-it/microbit-alarm/" target="_blank" class="link-btn">3. 📄 Tutorial: Intruder Motion Alarm</a>
+                    <a href="https://makecode.microbit.org/" target="_blank" class="link-btn">🛠️ Open MakeCode Editor</a>
+                    <b>Tutorials</b>
+                    <a href="https://microbit.org/projects/make-it-code-it/nightlight/" target="_blank" class="link-btn">📄 Tutorial: Light Sensor - Night Light</a>
+                    <div class="day-challenge">
+                        🧠 Challenge Yourself: Make the LEDs show a <em>sun</em> icon when it senses enough light and a <em>moon</em> icon when it is dark. Play a "wake up" alarm sound when changing from dark to light.
+                    </div>
+                    <a href="https://microbit.org/projects/make-it-code-it/spirit-level/" target="_blank" class="link-btn">📄 Tutorial: Motion Sensor - Level</a>
+                    <a href="https://microbit.org/projects/make-it-code-it/clap-lights/" target="_blank" class="link-btn">📄 Tutorial: Sound Sensor - Clap Light</a>
+                    <a href="https://microbit.org/projects/make-it-code-it/clap-hearts/" target="_blank" class="link-btn">📄 <em>Optional</em> Tutorial: Sound Sensor - Clap Heart Beat</a>
+                    <a href="https://microbit.org/projects/make-it-code-it/compass-north/" target="_blank" class="link-btn">📄 Tutorial: Magnetic Force Sensor - Compass</a>
+                    <a href="https://microbit.org/projects/make-it-code-it/sound-compass/" target="_blank" class="link-btn">📄 <em>Optional</em> Tutorial: Magnetic Force Sensor - Another Compass</a>
+                    <a href="https://microbit.org/projects/make-it-code-it/thermometer/" target="_blank" class="link-btn">📄 Tutorial: Temperature Sensor - Thermometer</a>
+                    <a href="https://microbit.org/projects/make-it-code-it/max-min-thermometer/" target="_blank" class="link-btn">📄 <em>Optional</em> Tutorial: Temperature Sensor - Temperature Tracking</a>
+                    <b>Competition: Vault Alarm System</b>
+                    <div class="day-challenge-descr">
+                        ⭐ Turn your Micro:Bit into an alarm system to detect when a vault door is opened. Use the following examples as inspiration for your alarm system.
+                    </div>
+                    <a href="https://microbit.org/projects/make-it-code-it/cookie-tin-alarm/" target="_blank" class="link-btn">💡 Intruder Light Alarm</a>
+                    <a href="https://microbit.org/projects/make-it-code-it/simple-tilt-alarm/" target="_blank" class="link-btn">💡 Intruder Motion Alarm</a>
+                    <a href="https://microbit.org/projects/make-it-code-it/simple-door-alarm/" target="_blank" class="link-btn">💡 Intruder Magnetic Alarm</a>
                 </div>
             </div>
         </details>
@@ -197,12 +238,16 @@
                 <span class="chevron">▼</span>
             </summary>
             <div class="day-content">
-                <div class="day-subtitle">Adding the Maqueen extension, controlling motors, headlights, and RGB lights.</div>
                 <div class="link-list">
-                    <a href="https://wiki.dfrobot.com/micro_Maqueen_for_micro_bit_SKU_ROB0148-EN" target="_blank" class="link-btn">1. 📖 DFRobot Maqueen Wiki Guide</a>
-                    <a href="#" class="link-btn">2. 📦 Extension URL: Search "maqueen"</a>
-                    <a href="#" class="link-btn">3. 📄 Project: Driving in a Square</a>
-                    <a href="#" class="link-btn">4. 📄 Project: Parallel Parking Challenge</a>
+                    <a href="https://makecode.microbit.org/" target="_blank" class="link-btn">🛠️ Open MakeCode Editor</a>
+                    <b>Tutorials</b>
+                    <a href="https://wiki.dfrobot.com/rob0148-en/docs/20849" target="_blank" class="link-btn">📄 Tutorial: Motor Control</a>
+                    <a href="https://wiki.dfrobot.com/rob0148-en/docs/20847" target="_blank" class="link-btn">📄 Tutorial: LED Headlights</a>
+                    <a href="https://wiki.dfrobot.com/rob0148-en/docs/20848" target="_blank" class="link-btn">📄 Tutorial: RGB Lights</a>
+                    <b>Challenge: Perfect Square</b>
+                    <div class="day-challenge-descr">
+                        ⭐ Make your Maqueen drive in a perfect square, stopping at each corner and beeping and changing its RGB lights to match the corner’s colour. Once it returns to the home/starting corner it should do a dance (spinning, playing music, light show, …).
+                    </div>
                 </div>
             </div>
         </details>
@@ -214,11 +259,16 @@
                 <span class="chevron">▼</span>
             </summary>
             <div class="day-content">
-                <div class="day-subtitle">Sonar distance sensing (Ultrasonic) and line-tracking IR sensors.</div>
                 <div class="link-list">
-                    <a href="#" class="link-btn">1. 📄 Project: Read Sonar Distance (cm)</a>
-                    <a href="#" class="link-btn">2. 📄 Project: Wall Avoidance Routine</a>
-                    <a href="#" class="link-btn">3. 📄 Project: Line Sensor Testing</a>
+                    <a href="https://makecode.microbit.org/" target="_blank" class="link-btn">🛠️ Open MakeCode Editor</a>
+                    <b>Tutorials</b>
+                    <a href="https://wiki.dfrobot.com/rob0148-en/docs/20846" target="_blank" class="link-btn">📄 Tutorial: Read Ultrasonic Sensor</a>
+                    <a href="https://wiki.dfrobot.com/rob0148-en/docs/20841" target="_blank" class="link-btn">📄 Tutorial: Obstacle Avoidance</a>
+                    <a href="https://wiki.dfrobot.com/rob0148-en/docs/20843" target="_blank" class="link-btn">📄 Tutorial: Read Line Tracking Sensors</a>
+                    <a href="https://wiki.dfrobot.com/rob0148-en/docs/20842" target="_blank" class="link-btn">📄 Tutorial: Follow the Path</a>
+                    <div class="day-challenge">
+                        🧠 Challenge Yourself: Combine the abilities of the Ultrasonic Sensor and the Line Tracking Sensors so that Maqueen can follow any path and (1) stop anytime an obstacle is in the way, and (2) travel off the path to get around an obstacle and find the path again and continue along.
+                    </div>
                 </div>
             </div>
         </details>
@@ -232,11 +282,18 @@
             <div class="day-content">
                 <div class="day-subtitle">Mars Rover Autonomous Challenge.</div>
                 <div class="link-list">
+                    <a href="https://makecode.microbit.org/" target="_blank" class="link-btn">🛠️ Open MakeCode Editor</a>
                     <a href="#" class="link-btn">1. 📜 Challenge Rules & Map Layout</a>
                     <a href="#" class="link-btn">2. 📋 Official Run Scorecard</a>
                 </div>
             </div>
         </details>
+
+        <br />
+        <h4>Additional Resources</h4>
+        <a href="https://github.com/DFRobot/Silly-Maqueen-Makecode/blob/master/Silly%20Maqueen-Makecode-V1.0-2019-11-20-EN.pdf" target="_blank" class="link-btn">📖 Silly Maqueen Tutorials</a>
+        <a href="https://github.com/DFRobot/Maqueen4.1-MakeCode-Tutorial/blob/master/Maqueen%204.1-MakeCode%20Graphical%20Programming%20TutorialV1.0-EN.pdf" target="_blank" class="link-btn">📖 Maqueen Programming Tutorials</a>
+
 
         <footer>
             <p>QYU Robotics Camp • Built for Micro:bit V2 & DFRobot Maqueen Lite</p>
